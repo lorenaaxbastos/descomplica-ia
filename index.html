@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>
+      Descomplica IA | Guia Interativo sobre Inteligência Artificial
+    </title>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JZ3RMGGLZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JZ3RMGGLZV");
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <form name="duvidas-feedback" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="duvidas-feedback" />
+      <textarea name="mensagem"></textarea>
+    </form>
+
+    <form name="pesquisa-impacto" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="pesquisa-impacto" />
+      <input type="text" name="q1Nota" />
+      <input type="text" name="q2Preparado" />
+      <input type="text" name="q3SecaoFavorita" />
+      <textarea name="q4Comentario"></textarea>
+    </form>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
